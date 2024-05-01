@@ -1,0 +1,8 @@
+configuraion{
+    modi: "drun,window,ssh";
+    display-drun: "app:";
+}
+
+@theme "./themes/theme1.rasi"
+
+
