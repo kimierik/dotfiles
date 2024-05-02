@@ -29,15 +29,12 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 
 "helpers
-Plug 'voldikss/vim-floaterm'
 "Plug 'mattn/emmet-vim'
-Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 
-Plug '~/programming/nvim_plugins/snippermanager'
 
 Plug 'nvim-orgmode/orgmode'
 
@@ -54,14 +51,9 @@ let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-emmet',
 
 call plug#end()
 
-"luafile ~/.config/nvim/lspconfig.lua
 
 set termguicolors
 
-"colorscheme daycula
-"colorscheme PaperColor
-"colorscheme silverhand
-"colorscheme rose-pine
 
 
 let g:sonokai_style = 'andromeda'
@@ -86,7 +78,6 @@ set expandtab
 
 
 
-let g:floaterm_keymap_toggle='<F7>'
 
 
 
@@ -116,6 +107,8 @@ source ~/.config/nvim/lua/cocsetup/init.vim
 "telescope remaps
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 inoremap <leader>cd <Esc>:set autochdir<cr>
 nnoremap <leader>cd <Esc>:set autochdir<cr>
@@ -134,11 +127,11 @@ nnoremap <c-k> <Esc>:bnext<cr>
 
 
 
-inoremap <c-b> <Esc>:NERDTreeToggle<cr>
-nnoremap <c-b> <Esc>:NERDTreeToggle<cr>
-:let g:NERDTreeShowLineNumbers=1
-:let NERDTreeShowHidden=1
-:autocmd BufEnter NERD_* setlocal rnu
+map <f7> :tab term <cr>
+
+" t remap  esc escapes terminal
+tnoremap <Esc> <C-\><C-n>
+
 
 command CopyYankToCp redir @+ | echo @" |redir END
 
