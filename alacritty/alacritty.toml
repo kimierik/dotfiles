@@ -1,0 +1,41 @@
+[window]
+decorations="None"
+opacity=0.71
+dimensions={columns=300,lines=300}
+
+
+[env]
+TERM="xterm-256color"
+
+
+[colors]
+draw_bold_text_with_bright_colors=true
+cursor = { text = "#111111", cursor = "#cccccc" }
+[colors.primary]
+background="#100a1b"
+foreground="#55FF55"
+
+[colors.normal]
+black=  "#000000"
+blue=   "#0000AA"
+cyan=   "#00AAAA"
+magenta="#cb1ed1"
+[colors.bright]
+black=  "#767676"
+blue=   "#5555FF"
+cyan=   "#55FFFF"
+green=  "#55FF55"
+magenta="#fd28ff"
+
+[font]
+normal={family="Fantasque Sans Mono", style="Regular"}
+size=14
+
+
+[keyboard]
+bindings = [
+   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
+]
+
+[mouse]
+hide_when_typing=true

@@ -23,3 +23,12 @@ vim.api.nvim_create_user_command(
 
 
 
+local buffer_term = require('buffer-term')
+
+buffer_term.setup() -- default config
+
+vim.keymap.set('t', '<Esc>', '<C-\\><C-n>')
+vim.keymap.set({ 'n', 't' }, '<f7>', function() buffer_term.toggle('a') end)
+vim.keymap.set({ 'n', 't' }, '<f8>', function() buffer_term.toggle('b') end)
+
+

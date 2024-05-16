@@ -16,6 +16,7 @@ Plug 'sainnhe/sonokai'
 Plug 'rose-pine/neovim'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'thedenisnikulin/vim-cyberpunk'
+Plug 'matsuuu/pinkmare'
 
 
 "Fuzzy finder
@@ -35,11 +36,17 @@ Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
 
+Plug 'caenrique/buffer-term.nvim'
 
 Plug 'nvim-orgmode/orgmode'
 
+Plug 'ziglang/zig.vim'
+
 "drip
 Plug 'neovide/neovide'
+
+
+
 
 "Plug 'nvim-lua/completion-nvim'
 "Plug 'neovim/nvim-lspconfig'
@@ -56,8 +63,9 @@ set termguicolors
 
 
 
-let g:sonokai_style = 'andromeda'
-colorscheme sonokai
+"let g:sonokai_style = 'andromeda'
+"colorscheme sonokai
+colorscheme pinkmare
 
 :lua require('treesitmodule')
 :lua require('orgmodeini')
@@ -69,6 +77,7 @@ set number
 set relativenumber
 set showmatch
 set guicursor=n-v-c:block-Cursor
+set guicursor=i:ver25
 set scrolloff=20
 
 
@@ -95,11 +104,10 @@ let g:neovide_cursor_trail_size = 0.2
 
 
 
+
 "imposter file in lua directory
 " handles random coc setup
 source ~/.config/nvim/lua/cocsetup/init.vim
-
-
 
 
 
@@ -127,10 +135,6 @@ nnoremap <c-k> <Esc>:bnext<cr>
 
 
 
-map <f7> :tab term <cr>
-
-" t remap  esc escapes terminal
-tnoremap <Esc> <C-\><C-n>
 
 
 command CopyYankToCp redir @+ | echo @" |redir END
