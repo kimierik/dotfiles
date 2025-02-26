@@ -18,6 +18,8 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'thedenisnikulin/vim-cyberpunk'
 Plug 'matsuuu/pinkmare'
 
+Plug 'nyoom-engineering/oxocarbon.nvim'
+
 
 "Fuzzy finder
 Plug 'nvim-lua/plenary.nvim'
@@ -28,23 +30,15 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }
 "Plug 'sheerun/vim-polyglot'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-
 "helpers
 "Plug 'mattn/emmet-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 
-
-Plug 'caenrique/buffer-term.nvim'
-
 Plug 'nvim-orgmode/orgmode'
 
 Plug 'ziglang/zig.vim'
-
-"drip
-Plug 'neovide/neovide'
-
 
 
 
@@ -81,9 +75,9 @@ set guicursor=i:ver25
 set scrolloff=20
 
 
+set expandtab
 set tabstop=4
 set shiftwidth=4
-set expandtab
 
 
 
@@ -117,6 +111,7 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>fm <cmd>Telescope man_pages<cr>
 
 inoremap <leader>cd <Esc>:set autochdir<cr>
 nnoremap <leader>cd <Esc>:set autochdir<cr>
@@ -132,6 +127,7 @@ nnoremap <c-j> <Esc>:bprevious<cr>
 inoremap <c-k> <Esc>:bnext<cr>
 nnoremap <c-k> <Esc>:bnext<cr>
 
+nnoremap <space>a <nop>
 
 
 

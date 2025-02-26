@@ -2,10 +2,24 @@
   "clangd.path": "~/.config/coc/extensions/coc-clangd-data/install/15.0.6/clangd_15.0.6/bin/clangd",
   "rust-analyzer.server.extraEnv": {"RUSTUP_TOOLCHAIN":"nightly"},
   "languageserver": {
+      "ocaml": {
+          "command": "ocamllsp",
+          "filetypes": ["ocaml","reason"]
+      },
+      "godot":{
+            "filetypes": ["gdscript"],
+            "host":"127.0.0.1",
+            "port":6005
+        }
   },
-  "zig.zls.path": "zls",
-  "zig.path": "zls"
+  "zig.enabled": true,
+  "zig.startUpMessage": true,
+  "zig.path": "/home/kimi/programming/auto_bash/tools/zlsWrap",
+  "zig.debugLog": false,
+
+  "python.analysis.typeCheckingMode": "off",
+  "python.linting.pytypeEnabled": false,
+  "inlayHint.enable": false,
+  
 
 }
-
-
