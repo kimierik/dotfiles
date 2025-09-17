@@ -13,5 +13,8 @@ vim.opt.showmatch=true
 
 vim.opt.wrap = false
 
+vim.opt.termguicolors=true
+
+
 vim.cmd.colorscheme("sonokai")
 vim.api.nvim_create_user_command('Cop', 'redir @+ | echo @" | redir end', {})
