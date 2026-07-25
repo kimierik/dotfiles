@@ -45,6 +45,7 @@ alias docker='sudo docker'
 alias docker-compose='sudo docker-compose'
 
 alias sus="systemctl suspend"
+#alias sus="xfce4-session-logout --suspend"
 alias clear="clear;'header'"
 alias spawn="xfce4-terminal"
 alias ggraph="git log --graph"
@@ -100,6 +101,8 @@ export PATH="$PATH:$(go env GOBIN):$(go env GOPATH)/bin"
 export FUZZYCD_MODE=p
 
 
+export TERMINAL=alacritty
+
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$HOME/.opam/default/lib/ocaml"
 
@@ -121,3 +124,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 source /usr/local/bin/fuzzycd
+
+# opencode
+export PATH=/home/kimi/.opencode/bin:$PATH

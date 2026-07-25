@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/kimi/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?.lua;/home/kimi/.cache/nvim/packer_hererocks/2.1.1748459687/share/lua/5.1/?/init.lua;/home/kimi/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?.lua;/home/kimi/.cache/nvim/packer_hererocks/2.1.1748459687/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/kimi/.cache/nvim/packer_hererocks/2.1.1748459687/lib/lua/5.1/?.so"
+local package_path_str = "/home/kimi/.cache/nvim/packer_hererocks/2.1.1774896198/share/lua/5.1/?.lua;/home/kimi/.cache/nvim/packer_hererocks/2.1.1774896198/share/lua/5.1/?/init.lua;/home/kimi/.cache/nvim/packer_hererocks/2.1.1774896198/lib/luarocks/rocks-5.1/?.lua;/home/kimi/.cache/nvim/packer_hererocks/2.1.1774896198/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/kimi/.cache/nvim/packer_hererocks/2.1.1774896198/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -75,6 +75,7 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["nvim-treesitter"] = {
+    config = { "\27LJ\2\nµ\1\0\1\b\0\n\1\25*\1\0\0006\2\0\0006\4\1\0009\4\2\0049\4\3\0046\5\1\0009\5\4\0059\5\5\0059\a\6\0B\5\2\0A\2\1\3\15\0\2\0X\4\6€\15\0\3\0X\4\4€9\4\a\3\1\1\4\0X\4\1€K\0\1\0006\4\0\0006\6\1\0009\6\b\0069\6\t\6B\4\2\1K\0\1\0\nstart\15treesitter\tsize\bbuf\22nvim_buf_get_name\bapi\ffs_stat\tloop\bvim\npcall€À\fÔ\1\1\0\5\0\f\0\0206\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\2\1\0B\0\2\0029\0\3\0005\2\4\0B\0\2\0016\0\5\0009\0\6\0009\0\a\0'\2\b\0005\3\n\0003\4\t\0=\4\v\3B\0\3\1K\0\1\0\rcallback\1\0\1\rcallback\0\0\rFileType\24nvim_create_autocmd\bapi\bvim\1\6\0\0\6c\blua\bvim\vvimdoc\nquery\finstall\nsetup\20nvim-treesitter\frequire\0" },
     loaded = true,
     path = "/home/kimi/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
@@ -99,6 +100,11 @@ _G.packer_plugins = {
     path = "/home/kimi/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["treesitter-parser-registry"] = {
+    loaded = true,
+    path = "/home/kimi/.local/share/nvim/site/pack/packer/start/treesitter-parser-registry",
+    url = "https://github.com/neovim-treesitter/treesitter-parser-registry"
+  },
   undotree = {
     loaded = true,
     path = "/home/kimi/.local/share/nvim/site/pack/packer/start/undotree",
@@ -117,6 +123,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+try_loadstring("\27LJ\2\nµ\1\0\1\b\0\n\1\25*\1\0\0006\2\0\0006\4\1\0009\4\2\0049\4\3\0046\5\1\0009\5\4\0059\5\5\0059\a\6\0B\5\2\0A\2\1\3\15\0\2\0X\4\6€\15\0\3\0X\4\4€9\4\a\3\1\1\4\0X\4\1€K\0\1\0006\4\0\0006\6\1\0009\6\b\0069\6\t\6B\4\2\1K\0\1\0\nstart\15treesitter\tsize\bbuf\22nvim_buf_get_name\bapi\ffs_stat\tloop\bvim\npcall€À\fÔ\1\1\0\5\0\f\0\0206\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\0016\0\0\0'\2\1\0B\0\2\0029\0\3\0005\2\4\0B\0\2\0016\0\5\0009\0\6\0009\0\a\0'\2\b\0005\3\n\0003\4\t\0=\4\v\3B\0\3\1K\0\1\0\rcallback\1\0\1\rcallback\0\0\rFileType\24nvim_create_autocmd\bapi\bvim\1\6\0\0\6c\blua\bvim\vvimdoc\nquery\finstall\nsetup\20nvim-treesitter\frequire\0", "config", "nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

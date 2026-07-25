@@ -3,6 +3,6 @@ configuraion{
     display-drun: "app:";
 }
 
-@theme "./themes/theme1.rasi"
+@theme "./themes/theme2.rasi"
 
 
